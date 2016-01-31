@@ -1,4 +1,6 @@
 lic.txt
 .idea/
 *.pyc
+
 front_end/bower_components/
+config.py
