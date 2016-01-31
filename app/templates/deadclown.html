@@ -115,7 +115,7 @@
     <script type="text/javascript">
         $(function() {
             var findImage = function (data) {
-                        var deadImage = '{{ url_for('static', filename='img/no-image.png') }}';
+                        var deadImage = '{{ url_for('static', filename='img/no-img.png') }}';
                         $.ajax({
                             url: "next/" + data,
                             context: document.body
