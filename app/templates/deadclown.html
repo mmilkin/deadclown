@@ -83,7 +83,7 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Dead Clown Funny</h2>
                 <p>I don't know.  Is it funny or is it that milk smells funny type funny?</p>
-                <img src="{{ url_for('static', filename='img/milk.png') }}"/>
+                <img width="400" src="{{ url_for('static', filename='img/milk.png') }}"/>
                 <p>Its closer to dead clown funny.</p>
                 <img style="color: white" src="{{ url_for('static', filename='img/w-clown.png') }}"/>
             </div>
@@ -123,7 +123,7 @@
                             var img = JSON.parse(outImg);
                             $.cookie('data', img.id);
                             hideSpinner();
-                            $('.current-img').attr('src', img.link);
+                            $('.current-img').attr('src', img.link || deadImage);
                         }).error(function(){
                             hideSpinner();
                             $('.current-img').attr('src', deadImage);
