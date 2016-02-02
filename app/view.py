@@ -42,4 +42,4 @@ def get_next(current_id=None):
         img = IMAGES.pop()
         return json.dumps({'link': img.link, 'id': img.id})
     else:
-        return json.dumps({'link': None, 'id': None})
+        return json.dumps({'link': None, 'id': None}), 400
