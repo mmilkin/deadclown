@@ -33,6 +33,8 @@ def get_next(current_id=None):
         )
         images = client.gallery_search('sad funny', page=PAGE)
         PAGE += 1
+        if not images:
+            PAGE = 0
         IMAGES.extend(images)
         PENDING = None
 
